@@ -1,0 +1,16 @@
+﻿<h2>My favorite course is: {{favouriteCourse.name}}</h2>
+
+<h2>Courses</h2>
+{{ title }}
+<ul>
+    <li *ngFor="#course of courses">
+        {{ course.name }}
+    </li>
+</ul>
+
+<p *ngIf="courses.length > 3">There are many courses!</p>
+
+<button (click)="onClickMe()">Click me!</button>
+
+
+{{ clickMessage }}

@@ -1,0 +1,11 @@
+﻿<h1>Welcome to {{title}}</h1>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1><code>msg.hidden: {{msg.hidden}}</code></h1>
+            <button type="button" class="btn btn-primary" (click)="msg.hidden = !msg.hidden">Toggle Message</button>
+            <h2 #msg>I am a name!</h2>
+        </div>
+    </div>
+</div>
